@@ -55,30 +55,6 @@ export default function ContactPage() {
             </CardContent>
           </Card>
         </div>
-
-        <div className="grid md:grid-cols-3 gap-6">
-          <Card className="p-6">
-            <Mail className="h-6 w-6 text-primary mb-4" />
-            <h3 className="font-semibold mb-2">Email</h3>
-            <p className="text-sm text-muted-foreground">
-              support@homeboards.com
-            </p>
-          </Card>
-          <Card className="p-6">
-            <Phone className="h-6 w-6 text-primary mb-4" />
-            <h3 className="font-semibold mb-2">Phone</h3>
-            <p className="text-sm text-muted-foreground">
-              (555) 123-4567
-            </p>
-          </Card>
-          <Card className="p-6">
-            <MessageSquare className="h-6 w-6 text-primary mb-4" />
-            <h3 className="font-semibold mb-2">Live Chat</h3>
-            <p className="text-sm text-muted-foreground">
-              Available 9am-5pm EST
-            </p>
-          </Card>
-        </div>
       </div>
     </div>
   );

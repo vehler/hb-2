@@ -23,6 +23,10 @@ const tasks: Task[] = [
   }
 ];
 
+export const getTasks =async () => {
+  return Promise.resolve(tasks);
+}
+
 export const getTasksByHouseId = async (houseId: string): Promise<Task[]> => {
   return Promise.resolve(tasks.filter(task => task.houseId === houseId));
 };

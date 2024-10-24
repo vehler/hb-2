@@ -21,6 +21,10 @@ const documents: Document[] = [
   }
 ];
 
+export const getDocuments =async () => {
+  return Promise.resolve(documents)
+}
+
 export const getDocumentsByHouseId = async (houseId: string): Promise<Document[]> => {
   return Promise.resolve(documents.filter(document => document.houseId === houseId));
 };
