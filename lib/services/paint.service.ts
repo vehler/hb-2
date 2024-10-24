@@ -25,6 +25,10 @@ const paints: Paint[] = [
   }
 ];
 
+export const getPaints =async () => {
+  return Promise.resolve(paints)
+}
+
 export const getPaintsByHouseId = async (houseId: string): Promise<Paint[]> => {
   return Promise.resolve(paints.filter(paint => paint.houseId === houseId));
 };

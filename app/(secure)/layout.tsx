@@ -20,7 +20,7 @@ export default function SecureLayout({
           </div>
         </div>
       </header>
-      <main className="flex-1 container py-6">{children}</main>
+      <main className="flex flex-1 container mx-auto py-6">{children}</main>
     </div>
   );
 }
