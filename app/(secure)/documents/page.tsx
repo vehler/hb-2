@@ -13,7 +13,7 @@ export default async function DocumentsPage() {
   const documents = await getDocuments();
 
   return (
-    <div className="space-y-8">
+    <div className="w-full space-y-8">
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold">Documents</h1>
         <Button>

@@ -14,7 +14,7 @@ export default async function HousesPage() {
   const houses = await getHouses();
 
   return (
-    <div className="space-y-8">
+    <div className="w-full space-y-8">
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold">Houses</h1>
         <Button>

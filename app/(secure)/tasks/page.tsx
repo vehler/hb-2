@@ -14,7 +14,7 @@ export default async function TasksPage() {
   const tasks = await getTasks();
 
   return (
-    <div className="space-y-8">
+    <div className="w-full space-y-8">
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold">Tasks</h1>
         <Button>

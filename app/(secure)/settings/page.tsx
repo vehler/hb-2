@@ -12,7 +12,7 @@ import { Separator } from "@/components/ui/separator";
 
 export default function SettingsPage() {
   return (
-    <div className="space-y-8">
+    <div className="w-full space-y-8">
       <h1 className="text-3xl font-bold">Settings</h1>
 
       <div className="grid gap-6">

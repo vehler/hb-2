@@ -13,7 +13,7 @@ export default async function PaintsPage() {
   const paints = await getPaints();
 
   return (
-    <div className="space-y-8">
+    <div className="w-full space-y-8">
       <div className="flex justify-between items-center">
         <h1 className="text-3xl font-bold">Paints</h1>
         <Button>

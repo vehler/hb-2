@@ -37,7 +37,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="container flex min-h-[calc(100vh-120px)] flex-col items-center justify-center">
+    <div className="container px-4 flex min-h-[calc(100vh-120px)] flex-col items-center justify-center">
       <Card className="w-full max-w-md">
         <CardHeader className="space-y-1">
           <CardTitle className="text-2xl text-center">Welcome back</CardTitle>

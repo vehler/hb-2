@@ -35,7 +35,7 @@ export default async function HouseDetailPage({ params }: HouseDetailPageProps) 
   ]);
 
   return (
-    <div className="space-y-8">
+    <div className="w-full space-y-8">
       <HouseHeader house={house} />
       
       <div className="grid gap-8 md:grid-cols-2">
