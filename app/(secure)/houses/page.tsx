@@ -10,8 +10,14 @@ import { getHouses } from "@/lib/services/house.service";
 import { Plus } from "lucide-react";
 import Link from "next/link";
 
+export const revalidate = 'no-store';
+
+
+// Mock user ID until auth is implemented
+const MOCK_USER_ID = "1";
+
 export default async function HousesPage() {
-  const houses = await getHouses();
+  const houses = await getHouses(MOCK_USER_ID);
 
   return (
     <div className="w-full space-y-8">

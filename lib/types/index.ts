@@ -5,11 +5,19 @@ export interface Feature {
   description: string;
 }
 
+export interface User {
+  id: string;
+  name: string;
+  email: string;
+  createdAt: string;
+  updatedAt: string;
+}
+
 export interface House {
   id: string;
   name: string;
   address: string;
-  owner: string;
+  userId: string;
   createdAt: string;
   updatedAt: string;
 }
@@ -21,6 +29,7 @@ export interface Task {
   status: 'pending' | 'in-progress' | 'completed';
   dueDate: string;
   houseId: string;
+  userId: string;
   createdAt: string;
   updatedAt: string;
 }
@@ -33,6 +42,7 @@ export interface Paint {
   finish: string;
   dateApplied: string;
   houseId: string;
+  userId: string;
   createdAt: string;
   updatedAt: string;
 }
@@ -43,6 +53,7 @@ export interface Document {
   type: string;
   url: string;
   houseId: string;
+  userId: string;
   createdAt: string;
   updatedAt: string;
 }

@@ -10,8 +10,11 @@ import { getTasks } from "@/lib/services/task.service";
 import { Plus } from "lucide-react";
 import { cn } from "@/lib/utils";
 
+// Mock user ID until auth is implemented
+const MOCK_USER_ID = "1";
+
 export default async function TasksPage() {
-  const tasks = await getTasks();
+  const tasks = await getTasks(MOCK_USER_ID);
 
   return (
     <div className="w-full space-y-8">

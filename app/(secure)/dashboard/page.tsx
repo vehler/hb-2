@@ -5,14 +5,16 @@ import { getDocuments } from "@/lib/services/document.service";
 import { getPaints } from "@/lib/services/paint.service";
 import { Home, ClipboardList, FileText, Paintbrush } from "lucide-react";
 import Link from "next/link";
-import { cn } from "@/lib/utils";
+
+// Mock user ID until auth is implemented
+const MOCK_USER_ID = "1";
 
 export default async function DashboardPage() {
   const [houses, tasks, documents, paints] = await Promise.all([
-    getHouses(),
-    getTasks(),
-    getDocuments(),
-    getPaints(),
+    getHouses(MOCK_USER_ID),
+    getTasks(MOCK_USER_ID),
+    getDocuments(MOCK_USER_ID),
+    getPaints(MOCK_USER_ID),
   ]);
 
   const stats = [
@@ -83,12 +85,10 @@ export default async function DashboardPage() {
                     </p>
                   </div>
                   <span
-                    className={cn(
-                      "text-sm",
-                      task.status === "completed"
-                        ? "text-green-500"
-                        : "text-yellow-500"
-                    )}
+                    className={task.status === "completed" 
+                      ? "text-green-500" 
+                      : "text-yellow-500"
+                    }
                   >
                     {task.status}
                   </span>

@@ -9,8 +9,11 @@ import {
 import { getDocuments } from "@/lib/services/document.service";
 import { FileText, Plus } from "lucide-react";
 
+// Mock user ID until auth is implemented
+const MOCK_USER_ID = "1";
+
 export default async function DocumentsPage() {
-  const documents = await getDocuments();
+  const documents = await getDocuments(MOCK_USER_ID);
 
   return (
     <div className="w-full space-y-8">

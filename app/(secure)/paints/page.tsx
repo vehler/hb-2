@@ -9,8 +9,11 @@ import {
 import { getPaints } from "@/lib/services/paint.service";
 import { Paintbrush, Plus } from "lucide-react";
 
+// Mock user ID until auth is implemented
+const MOCK_USER_ID = "1";
+
 export default async function PaintsPage() {
-  const paints = await getPaints();
+  const paints = await getPaints(MOCK_USER_ID);
 
   return (
     <div className="w-full space-y-8">
